@@ -5,6 +5,7 @@ if [ ! -e "/etc/ssh/sshd_config.d" ]; then
 fi
 
 tee "/etc/ssh/sshd_config.d/01_hardening.conf" > /dev/null << EOF
+PubkeyAuthentication yes
 ChallengeResponseAuthentication no
 KerberosAuthentication no
 GSSAPIAuthentication no
