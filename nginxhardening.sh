@@ -5,7 +5,18 @@ if [ ! -e "/etc/nginx/nginx.conf" ]; then
 fi
 
 tee "/etc/nginx/nginx.conf" > /dev/null << EOF
-client_body_buffer_size 1k
+
+# /etc/nginx/nginx.conf
+http {
+    # Basic Settings
+    more_set_headers 'Server: Custom Header';
+
+##buffer policy
+        client_body_buffer_size 1K;
+        client_header_buffer_size 1k;
+        client_max_body_size 1k;
+        large_client_header_buffers 2 1k;
+        ##end buffer policy
 
 location / {
 limit_except GET HEAD POST { deny all; }
