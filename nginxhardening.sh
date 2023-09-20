@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-apt update && apt install nginx-extras -y
+apt update && apt install nginx-extras -y &&
 
 unlink /etc/nginx/sites-enabled/default
 
