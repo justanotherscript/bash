@@ -2,6 +2,8 @@
 
 apt update && apt install nginx-extras -y
 
+unlink /etc/nginx/sites-enabled/default
+
 if [ ! -e "/etc/nginx/nginx.conf" ]; then
   touch /etc/nginx/nginx.conf
 fi
