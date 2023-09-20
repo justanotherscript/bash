@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+sudo cp -a /etc/nginx/nginx.conf /etc/nginx.conf.Back &&
 apt update && apt install nginx-extras -y &&
 
 unlink /etc/nginx/sites-enabled/default
