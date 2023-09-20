@@ -13,6 +13,7 @@ tee "/etc/nginx/nginx.conf" > /dev/null << EOF
 # /etc/nginx/nginx.conf
 http {
     # Basic Settings
+    server_tokens off;
     more_set_headers 'Server: Custom Header';
 
 ##buffer policy
