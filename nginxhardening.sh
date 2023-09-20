@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+apt update && apt install nginx-extras -y
+
 if [ ! -e "/etc/nginx/nginx.conf" ]; then
   touch /etc/nginx/nginx.conf
 fi
