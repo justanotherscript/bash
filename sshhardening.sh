@@ -63,5 +63,5 @@ Subsystem sftp /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO     #Enable sFTP sub
 KerberosAuthentication no
 GSSAPIAuthentication no
 ClientAliveInterval 300
-ClientAliveCountMax 2
+# ClientAliveCountMax 2
 EOF
