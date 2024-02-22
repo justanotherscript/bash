@@ -1,3 +1,5 @@
+### https://github.com/krabelize/sshd-hardening-ed25519
+
 #!/usr/bin/env bash
 
 if [ ! -e "/etc/ssh/sshd_config.d" ]; then
