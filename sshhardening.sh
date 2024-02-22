@@ -28,7 +28,7 @@ HostbasedAcceptedKeyTypes ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nis
 
 PermitRootLogin no                                              #Disable root login
 #AllowUsers [username]                                          #Authorized SSH users are inside the admin group
-MaxAuthTries 5                                                  #Maximum allowed authentication attempts
+MaxAuthTries 3                                                  #Maximum allowed authentication attempts
 MaxSessions 2                                                   #Maximum allowed sessions by the user
 
 PasswordAuthentication no                                       #No username password authentication
@@ -69,6 +69,4 @@ PermitEmptyPasswords no
 Protocol 2
 ClientAliveInterval 300
 ClientAliveCountMax 2
-MaxAuthTries 3
-LoginGraceTime 5m
 EOF
