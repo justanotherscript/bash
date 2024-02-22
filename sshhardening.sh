@@ -60,13 +60,10 @@ TCPKeepAlive yes                                                #Do not use TCP 
 AcceptEnv LANG LC_*                                             #Allow client to pass locale environment variables
 Subsystem sftp /usr/lib/ssh/sftp-server -f AUTHPRIV -l INFO     #Enable sFTP subsystem over SSH
 
-PasswordAuthentication no
-PubkeyAuthentication yes
 ChallengeResponseAuthentication no
 KerberosAuthentication no
 GSSAPIAuthentication no
 PermitEmptyPasswords no
-Protocol 2
 ClientAliveInterval 300
 ClientAliveCountMax 2
 EOF
